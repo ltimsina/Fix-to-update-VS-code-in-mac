@@ -12,4 +12,5 @@ First, fix the permissions in the ShipIt logs. If you ever got the permission es
 Then, recursively remove the com.apple.quarantine attribute from Code. Just run below two cmds one by one, make sure you replace $USER with your $USER_NAME
 
 sudo chown -R $USER ~/Library/Caches/com.microsoft.VSCode.ShipIt
+
 xattr -dr com.apple.quarantine /Applications/Visual\ Studio\ Code.app
